@@ -1,0 +1,199 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f8f0e3; /* Light pastel background */
+    color: #333;
+}
+
+header {
+    background-color: #ffe8d2; /* Slightly darker pastel header */
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #e63946; /* Vibrant accent color for logo */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e63946; /* Accent color on hover */
+}
+
+#hero {
+    background-color: #a8dadc; /* Hero background color */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff; /* White headline */
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2); /* subtle text shadow */
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f0f0f0; /* Lighter text in hero */
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #e63946; /* Vibrant button color */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #c42834; /* Darker shade on hover */
+}
+
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #e63946; /* Section headline color */
+}
+
+.why-choose {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.why-item {
+    flex: 1 1 200px; /* Distribute items evenly, min-width 200px */
+    margin: 20px;
+    text-align: center;
+}
+
+.why-item img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.shop-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.shop-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.shop-item h3 {
+    margin: 15px 20px;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.add-to-cart {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #a8dadc; /* Button color in shop */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #71b5b8; /* Darker shade on hover */
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+footer {
+    background-color: #ffe8d2; /* Footer background color */
+    text-align: center;
+    padding: 20px 0;
+    color: #555;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd; /* subtle border */
+}
